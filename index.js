@@ -40,7 +40,7 @@ app.post("/jokes",(req,res)=>{
   res.json(newJoke);
 });
 //5. PUT a joke
-app.put("jokes/:id",(req,res)=>{
+app.put("/jokes/:id",(req,res)=>{
   const id = parseInt(req.params.id);
   const replacementJoke = {
     id: id,
